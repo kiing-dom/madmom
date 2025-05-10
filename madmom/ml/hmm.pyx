@@ -23,7 +23,7 @@ cimport numpy as np
 cimport cython
 np.import_array()
 
-from numpy.math cimport INFINITY
+cdef double INFINITY = float('inf')
 
 
 ctypedef np.uint32_t uint32_t
